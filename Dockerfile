@@ -9,5 +9,8 @@ RUN set -x && \
 
 WORKDIR /etc/ocserv
 
+ADD ocpasswd ./
+ADD ocserv.conf ./
+
 EXPOSE 443
 CMD [ "/start.sh" ]
